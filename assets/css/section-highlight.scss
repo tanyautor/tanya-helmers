@@ -1,10 +1,10 @@
 ---
 ---
 
-@use 'neon-colors' as neon;
+@use 'tan-palette' as tanp;
 
 .outlined-section {
-  background-color: neon.$bg-color;
+  background-color: tanp.$bg-color;
   text-align: center;
   min-height: 210px;
   position: relative;
@@ -18,7 +18,7 @@
 .outlined-section-wrapper {
   border-radius: 16px;
   padding: 2px;
-  background: linear-gradient(135deg, neon.$neon-cyan, neon.$neon-purple);
+  background: tanp.$highlight-border;
   display: flex;
   width: 100%;
   position: relative;
@@ -27,8 +27,8 @@
   margin-bottom: 2rem;
 
   box-shadow:
-    -3px -3px 12px neon.$neon-cyan,
-    3px 3px 12px neon.$neon-purple;
+    0px 0px 0px tanp.$highlight-border,
+    0px 3px 5px tanp.$highlight-shadow;
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
@@ -53,7 +53,7 @@ main h2 {
   display: block;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: neon.$neon-cyan;
+  color: tanp.$text-link-color;
 
   &::after {
     content: '';
@@ -63,10 +63,10 @@ main h2 {
     width: 120%;
     height: 4px;
     border-radius: 2px;
-    background: linear-gradient(135deg, neon.$neon-cyan, neon.$neon-purple);
+    background: tanp.$text-link-color;
     box-shadow:
-      0 0 12px rgba(neon.$neon-cyan, 0.5),
-      0 0 12px rgba(neon.$neon-purple, 0.5);
+      0 0 12px rgba(tanp.$highlight-border, 0.5),
+      0 0 12px rgba(tanp.$highlight-shadow, 0.5);
   }
 }
 

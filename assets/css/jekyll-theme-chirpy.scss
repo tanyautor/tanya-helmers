@@ -10,11 +10,11 @@
 
 /* append your custom style below */
 
-@use 'neon-colors' as neon;
+@use 'tan-palette' as tanp;
 
 body {
-  background: neon.$bg-color; /* dark canvas */
-  color: neon.$text-color; /* soft text */
+  background: tanp.$bg-color; /* dark canvas */
+  color: tanp.$text-color; /* soft text */
   font-family: 'Fira Code', monospace;
 }
 
@@ -29,34 +29,36 @@ body {
 }
 
 #sidebar {
-  background-color: neon.$bg-color;
-  color: neon.$text-color;
+  background-color: tanp.$bg-color;
+  color: tanp.$text-color;
   border-right: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
-    180deg,
-    neon.$neon-cyan,
-    neon.$neon-purple
+    130deg,
+    tanp.$sidebar-color,
+    tanp.$bg-color
   );
+  box-shadow:
+    1px 1px 1em tanp.$sidebar-color;
 }
 
 #topbar {
-  background-color: neon.$bg-color;
-  color: neon.$text-color;
+  background-color: tanp.$bg-color;
+  color: tanp.$text-color;
   display: none;
 }
 
 #tail-wrapper {
-  background-color: neon.$bg-color;
-  color: neon.$text-color;
+  background-color: tanp.$bg-color;
+  color: tanp.$text-color;
   width: 100%;
   margin-left: 0;
   padding: 2rem;
 }
 
 #tail-wrapper footer {
-  background-color: neon.$bg-color;
-  color: neon.$text-color;
+  background-color: tanp.$bg-color;
+  color: tanp.$text-color;
 }
 
 #mode-switch,
@@ -65,7 +67,7 @@ body {
 }
 
 .content a:not(.img-link):hover {
-  color: neon.$neon-purple !important;
-  border-bottom: 1px neon.$neon-purple;
+  color: tanp.$bg-link-color !important;
+  border-bottom: 1px tanp.$bg-link-color;
   text-decoration: none;
 }

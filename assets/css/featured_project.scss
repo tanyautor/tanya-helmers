@@ -1,7 +1,7 @@
 ---
 ---
 
-@use 'neon-colors' as neon;
+@use 'tan-palette' as tanp;
 
 @media (max-width: 768px) {
   .featured-project {
@@ -79,10 +79,10 @@
 
   font-weight: 500;
   text-decoration: none;
-  color: neon.$neon-cyan;
+  color: tanp.$text-link-color;
 
-  border: 1px solid neon.$neon-cyan;
-  border-bottom: 1px solid neon.$neon-cyan !important;
+  border: 1px solid tanp.$text-link-color;
+  border-bottom: 1px solid tanp.$text-link-color !important;
   background: transparent;
 
   transition:
@@ -91,9 +91,9 @@
     transform 0.25s ease;
 
   &:hover {
-    color: neon.$neon-purple;
-    background: neon.$neon-cyan;
-    box-shadow: 0 0 12px rgba(neon.$neon-cyan, 0.6);
+    color: tanp.$bg-link-color;
+    background: tanp.$text-link-color;
+    box-shadow: 0 0 12px rgba(tanp.$text-link-color, 0.6);
     transform: translateY(-1px);
   }
 }
