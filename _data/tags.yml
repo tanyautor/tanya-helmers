@@ -1,0 +1,23 @@
+C++:
+  color: "#00599C"
+  text_color: "#fff"
+
+Graphics:
+  color: "#E67E22"
+  text_color: "#fff"
+
+Unreal:
+  color: "#2D9BF0"
+  text_color: "#fff"
+
+Blueprinting:
+  color: "#00C853"
+  text_color: "#fff"
+
+OpenGL:
+  color: "#00C853"
+  text_color: "#fff"
+
+Custom Tech:
+  color: "#00C853"
+  text_color: "#fff"
