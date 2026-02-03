@@ -148,7 +148,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/tanya-helmers"
+baseurl: 
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -168,12 +168,9 @@ collections:
   tabs:
     output: true
     sort_by: order
-  posts:
+  blogs:
     output: true
-    permalink: /posts/:title/
-  projects:
-    output: true
-    permalink: /projects/:title/
+    permalink: /blogs/:title/
 
 defaults:
   - scope:

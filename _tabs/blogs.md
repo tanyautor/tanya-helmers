@@ -1,4 +1,5 @@
 ---
+title: Blog Posts
 layout: page
 icon: fas fa-archive
 order: 2
@@ -17,7 +18,7 @@ order: 2
   <section class="outlined-section">
 
   <h1 class="dynamic-title">
-    {{ page.title }}
+    My Posts
   </h1>
 
     <div class="projects-container">
