@@ -8,7 +8,7 @@
 
 - title: "Graphics in Unreal Engine 5, what I wish I knew"
   image: "assets/img/projects/fluid_rendering/fluid_rendering_thumbnail.gif"
-  link: "/blogs/fluid_rendering"
+  link: "/blogs/fluid-rendering"
   tags: [Graphics, C++, Unreal]
   highlighted: false
   highlighted_layout: image-left
