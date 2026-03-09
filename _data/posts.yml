@@ -7,8 +7,8 @@
   short_description: "Research project into Real-Time Cloud rendering using ray marching, and voxel optimizations."
 
 - title: "Graphics in Unreal Engine 5, what I wish I knew"
-  image: "assets/img/projects/fluid-rendering/fluid_rendering_thumbnail.gif"
-  link: "/blogs/fluid-rendering"
+  image: "assets/img/projects/fluid_rendering/fluid_rendering_thumbnail.gif"
+  link: "/blogs/fluid_rendering"
   tags: [Graphics, C++, Unreal]
   highlighted: true
   highlighted_layout: image-left

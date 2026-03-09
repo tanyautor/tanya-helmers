@@ -26,7 +26,7 @@ order: 1
         <div class="card-wrapper">
           <div class="project-card" data-tags="{{ project.tags | join: ',' }}">
             <img src="{{ project.image }}" alt="{{ project.title }}">
-            <h3>{{ project.title }}</h3>
+            <h3 style="display:inline-block;white-space:break-spaces;">{{ project.title }}</h3>
             <a href="{{ project.link }}" class="card-link"></a>
 
             <div class="tags">
@@ -35,16 +35,31 @@ order: 1
                 {% assign tag_data = site.data.tags[tag] %}
 
                 <span class="tag" style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};">
-                    {{ tag }}
+                  {{ tag }}
                 </span>
-                
+
               {% endfor %}
+
             </div>   
+
+            <div class="desc">
+              <ul class="desc" style="list-style-type:disc;">
+
+              {% for desc in project.desc %}
+
+                <li>
+                  <div class="desc" style="float:left;"> {{ desc }} </div> <br>
+                </li>
+
+              {% endfor %}
+              </ul>
+            </div>
+
           </div>
         </div>
 
       {% endfor %}
-    
+
     </div>
   </section>
 </section>

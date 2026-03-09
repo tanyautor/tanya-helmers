@@ -1,8 +1,39 @@
 - title: "Real Time Fluid Rendering"
-  image: "assets/img/projects/fluid-rendering/fluid_rendering_thumbnail.gif"
+  image: "assets/img/projects/fluid_rendering/fluid_rendering_thumbnail.gif"
   link: "/projects/fluid-simulation"
   tags: [Graphics, C++, Unreal]
+  desc: [Compute Shaders, Low-Level GPU Optimization, Research]
   people: 2
   highlighted: true
   highlighted_layout: image-left
   short_description: "Research project into Real-Time Fluid rendering and particle based fluid simulation."
+
+- title: "Kudzu Puzzle Demo"
+  image: "assets/img/projects/kudzu_demo/kudzu_demo_thumbnail.png"
+  link: "/projects/kudzu-demo"
+  tags: [Custom Tech, C++]
+  desc: [Custom Engine, Team Project, Gameplay Programming]
+  people: 7
+  highlighted: true
+  highlighted_layout: image-left
+  short_description: "Student group project at BUas, focused on collaborating on large code bases in a larger team consisting of only programmers."
+
+- title: "Real Time Cloud Rendering"
+  image: "assets/img/projects/cloud_rendering/cloud_rendering_thumbnail.gif"
+  link: "/projects/cloud-rendering"
+  tags: [Graphics, Custom Tech]
+  desc: [Volumetric Rendering, Low-Level GPU Optimization, Research]
+  people: 1
+  highlighted: true
+  highlighted_layout: image-left
+  short_description: "Research project into Real-Time Cloud rendering based on Guerilla Games Nubis system."
+
+- title: "Copper Clash"
+  image: "assets/img/projects/copper_clash/copper_clash_thumbnail.png"
+  link: "/projects/copper-clash"
+  tags: [Blueprinting, Unreal]
+  desc: [Team Project, Camera Research, Unreal Engine 5]
+  people: 12
+  highlighted: true
+  highlighted_layout: image-left
+  short_description: "Student group project at BUas, focused on collaboration and research."
