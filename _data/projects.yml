@@ -2,7 +2,7 @@
   image: "assets/img/projects/fluid_rendering/fluid_rendering_thumbnail.gif"
   link: "/projects/fluid-simulation"
   tags: [Graphics, C++, Unreal]
-  desc: [Compute Shaders, Low-Level GPU Optimization, Research]
+  desc: [Compute Shaders, Low-Level GPU Optimization, Research Project]
   people: 2
   highlighted: true
   highlighted_layout: image-left
@@ -22,9 +22,9 @@
   image: "assets/img/projects/cloud_rendering/cloud_rendering_thumbnail.gif"
   link: "/projects/cloud-rendering"
   tags: [Graphics, Custom Tech]
-  desc: [Volumetric Rendering, Low-Level GPU Optimization, Research]
+  desc: [Volumetric Rendering, Low-Level GPU Optimization, Self-Study Project]
   people: 1
-  highlighted: true
+  highlighted: false
   highlighted_layout: image-left
   short_description: "Research project into Real-Time Cloud rendering based on Guerilla Games Nubis system."
 
@@ -34,6 +34,6 @@
   tags: [Blueprinting, Unreal]
   desc: [Team Project, Camera Research, Unreal Engine 5]
   people: 12
-  highlighted: true
+  highlighted: false
   highlighted_layout: image-left
   short_description: "Student group project at BUas, focused on collaboration and research."

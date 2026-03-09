@@ -1,4 +1,104 @@
 ---
-layout: home
-# Index page
+layout: page
 ---
+
+<link rel="stylesheet" href="../assets/css/cards.css">
+<link rel="stylesheet" href="../assets/css/links.css">
+<link rel="stylesheet" href="../assets/css/highlighted_projects.css">
+<link rel="stylesheet" href="../assets/css/section-highlight.css">
+
+<section class="outlined-section">
+    <h1> Hello! </h1>
+    <h3> My name is Tanya Helmers. </h3>
+    <pre>
+        This whole site is still a work in progress at the moment. 
+        But feel free to browse for now. 
+        I try to keep this up to date and post the projects I worked on, 
+        as well as some blog posts I wrote about these projects.
+    </pre>
+</section>
+
+<section class="outlined-section-wrapper">
+  <section class="outlined-section">
+
+  <h1 class="dynamic-title">
+    Highlighted
+  </h1>
+
+
+    <h2 class="dynamic-title"> Projects </h2>
+    <div class="projects-container">
+
+
+      {% for project in site.data.projects %}
+      {% if project.highlighted %}
+        <div class="card-wrapper">
+          <div class="project-card" data-tags="{{ project.tags | join: ',' }}">
+            <img src="{{ project.image }}" alt="{{ project.title }}">
+            <h3 style="display:inline-block;white-space:break-spaces;">{{ project.title }}</h3>
+            <a href="{{ project.link }}" class="card-link"></a>
+
+            <div class="tags">
+
+              {% for tag in project.tags %}
+                {% assign tag_data = site.data.tags[tag] %}
+
+                <span class="tag" style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};">
+                  {{ tag }}
+                </span>
+
+              {% endfor %}
+
+            </div>   
+
+            <div class="desc">
+              <ul class="desc" style="list-style-type:disc;">
+
+              {% for desc in project.desc %}
+
+                <li>
+                  <div class="desc" style="float:left;"> {{ desc }} </div> <br>
+                </li>
+
+              {% endfor %}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+    
+    <h2 class="dynamic-title"> Posts </h2>
+    <div class="projects-container">
+
+      {% for post in site.data.posts %}
+      {% if post.highlighted %}
+        <div class="card-wrapper">
+          <div class="project-card" data-tags="{{ post.tags | join: ',' }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <h3>{{ post.title }}</h3>
+            <a href="{{ post.link }}" class="card-link"></a>
+
+            <div class="tags">
+
+              {% for tag in post.tags %}
+                {% assign tag_data = site.data.tags[tag] %}
+
+                <span class="tag" style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};">
+                    {{ tag }}
+                </span>
+                
+              {% endfor %}
+            </div>   
+          </div>
+        </div>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </section>
+</section>

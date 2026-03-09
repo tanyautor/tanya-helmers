@@ -10,6 +10,6 @@
   image: "assets/img/projects/fluid_rendering/fluid_rendering_thumbnail.gif"
   link: "/blogs/fluid_rendering"
   tags: [Graphics, C++, Unreal]
-  highlighted: true
+  highlighted: false
   highlighted_layout: image-left
   short_description: "Research project into Real-Time Cloud rendering using ray marching, and voxel optimizations."
